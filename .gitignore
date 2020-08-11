@@ -1,5 +1,6 @@
 .project
 .classpath
 .class
+myWebAppStruts.log
 target/
 
