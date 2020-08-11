@@ -9,6 +9,9 @@
 	<s:head />
 </head>
 <body>
- <h1><s:property value="message"/></h1>
+ <s:form  action="welcome.action">
+   <s:textfield name="firstName" label="Your First Name:"></s:textfield>
+   <s:submit value="Submit"></s:submit>
+</s:form>
 </body>
 </html>

@@ -9,6 +9,6 @@
 	<s:head />
 </head>
 <body>
- <h1>SUCCESS PAGE</h1>
+ <h1><s:property value="message"/></h1>
 </body>
 </html>

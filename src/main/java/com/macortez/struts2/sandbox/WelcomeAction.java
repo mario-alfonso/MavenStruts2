@@ -9,30 +9,20 @@ import com.opensymphony.xwork2.conversion.annotations.TypeConversion;
  * 
  */
 @Conversion()
-public class TestAction extends ActionSupport{
+public class WelcomeAction extends ActionSupport{
 
-  String message;
   String firstName;
 
   public String execute() {
     System.out.println("Execute method");
-    message = "SUCCESS message";
     System.out.println("Name -" + firstName );
 
     return "success"; 
     //return "error";
   }
 
-  public String getMessage() {
-    return message;
-  }
-
-  public void setMessage( String message ) {
-    this.message = message;
-  }
-
   public String getFirstName() {
-    return message;
+    return firstName;
   }
 
   public void setFirstName( String firstName ) {

@@ -35,6 +35,11 @@
             <result name="error">/WEB-INF/jsp/error.jsp</result>
         </action>
 
+        <action name="welcome" class="com.macortez.struts2.sandbox.WelcomeAction">
+            <result name="success">/WEB-INF/jsp/welcome.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+
     </package>
 
 </struts>
