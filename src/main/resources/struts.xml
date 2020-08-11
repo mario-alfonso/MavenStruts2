@@ -20,6 +20,21 @@
             <result>/WEB-INF/jsp/helloWorld.jsp</result>
         </action>
 
+        <action name="helloWorld" class="helloWorldAction">
+            <result name="input">/jsp/index.jsp</result>
+            <result>/WEB-INF/jsp/helloWorld.jsp</result>
+        </action>
+
+    </package>
+
+
+    <package name="test" extends="struts-default">
+
+        <action name="testAction" class="com.macortez.struts2.sandbox.TestAction">
+            <result name="success">/WEB-INF/jsp/success.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+
     </package>
 
 </struts>
