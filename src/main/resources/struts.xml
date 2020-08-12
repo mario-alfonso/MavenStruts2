@@ -42,4 +42,24 @@
 
     </package>
 
+    <package name="register" extends="struts-default">
+
+        <action name="register" class="com.macortez.struts2.registration.RegisterAction">
+            <result name="display">/WEB-INF/jsp/register.jsp</result>
+            <result name="input">/WEB-INF/jsp/register.jsp</result>
+        </action>
+
+         <action name="formLoadAction" method="initializeFormFields" class="com.macortez.struts2.registration.RegisterAction">
+            <result name="input">/WEB-INF/jsp/register.jsp</result>       
+        </action>
+
+
+        <action name="welcome" class="com.macortez.struts2.sandbox.WelcomeAction">
+            <result name="success">/WEB-INF/jsp/welcome.jsp</result>
+            <result name="input">/WEB-INF/jsp/register.jsp</result>
+            <result name="error">/WEB-INF/jsp/error.jsp</result>
+        </action>
+
+    </package>
+
 </struts>
